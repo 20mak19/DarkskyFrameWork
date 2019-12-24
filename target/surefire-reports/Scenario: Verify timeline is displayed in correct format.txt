@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Verify timeline is displayed in correct format
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.794 sec - in Scenario: Verify timeline is displayed in correct format

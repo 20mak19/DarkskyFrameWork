@@ -2,8 +2,9 @@ package framework.webpages;
 
 import org.openqa.selenium.By;
 import stepdefinition.SharedSD;
-import java.util.TimeZone;
+
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class Timezone extends ElementUtil {
 
@@ -13,23 +14,25 @@ public class Timezone extends ElementUtil {
 
     public void sendTextToSearchField(){
         SharedSD.getDriver().findElement(searchBox).clear();
-        setValue(searchBox,"Laurel Avenue, Hammonton, NJ");
+       setValue(searchBox,"Laurel Avenue, Hammonton, NJ");
     }
     public int TimeZoneTwoHoursLater() throws InterruptedException {
         TimeZone timeZone = Calendar.getInstance().getTimeZone();
         Calendar calendar=Calendar.getInstance(TimeZone.getTimeZone("GMT-3"));
-        System.out.println(timeZone.getID()+" Time&zone is :"+ calendar.get(Calendar.HOUR)+" o'clock two hours later");
+        System.out.println(timeZone.getID()+" Time&zone is : "+ calendar.getTime()+" o'clock ");
         return calendar.get(Calendar.HOUR);
+        //calendar.get(Calendar.HOUR)
 
     }
     public int addTwoHoursOnCurrentTime() throws InterruptedException{
         String time=getTextFromElement(timeTwoHourslaterFromNow);
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         int timeForTwoHoursLater=Integer.parseInt(time.replaceAll("[^\\d.]", ""));
-        System.out.println("Time is "+timeForTwoHoursLater+" on the DarkSky HomePage o'clock two hours later");
+        System.out.println("Time will be "+timeForTwoHoursLater+" o'clock two hours later on the DarkSky HomePage ");
         return timeForTwoHoursLater;
     }
-    public boolean timeAddedByTwoHours(){
+    public boolean timeAddedByTwoHours()
+    {
         return isAddedBy2(timeTwoHourslaterFromNow);
     }
 

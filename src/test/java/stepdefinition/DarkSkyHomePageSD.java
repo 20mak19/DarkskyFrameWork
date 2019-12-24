@@ -22,8 +22,9 @@ public class DarkSkyHomePageSD {
     }
 
     @Then("^I verify lowest and highest temp is displayed correctly$")
-     public void listHighestAndLowestTemp(){
+     public void listHighestAndLowestTemp() throws InterruptedException {
         darkSkyHomePage.findTodaysMinMaxTemperature();
+
     }
 }
 

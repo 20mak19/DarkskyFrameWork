@@ -75,6 +75,15 @@ public class ElementUtil{
         return webAction(locator).isEnabled();
     }
 
+
+
+    public boolean isElementVisible(By locator) {
+        return webAction(locator).isDisplayed();
+    }
+
+
+
+
     public List<WebElement> webElements(By locator){
         return getDriver().findElements(locator);
     }
@@ -103,26 +112,7 @@ public class ElementUtil{
         Actions actions = new Actions(getDriver());
         actions.moveToElement(webAction(locator)).build().perform();
     }
-    //    public static boolean isAddedBy2(By locator) {
-//        List<WebElement> lists = getDriver().findElements(locator);
-//        for (int i = 0; i < lists.size(); i++) {
-//            Pattern p = Pattern.compile("[0-9]");
-//            Matcher m = p.matcher(lists.get(i).getText());
-//            while (m.find()) {
-//                int n = Integer.parseInt(m.group());
-//                if (isOdd(n)) {
-//                    if ((n % 2 != 1)) {
-//                        return false;
-//                    }
-//                } else {
-//                    if ((n % 2 != 0)) {
-//                        return false;
-//                    }
-//                }
-//            }
-//        }
-//        return true;
-//    }
+
     public static boolean isAddedBy2(By locator){
         List<WebElement> lists = getDriver().findElements(locator);
         for (int i = 0; i < lists.size(); i++) {

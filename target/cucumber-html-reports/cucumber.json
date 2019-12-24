@@ -1,0 +1,369 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 360562179,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Darksky Home Page",
+            "match": {
+              "location": "DarkSkyHomePageSD.verifyHomePageTitle()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2720063941,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.before()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1549747,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify invalid signup error message",
+        "description": "",
+        "id": "darksky-feature;verify-invalid-signup-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 114080066,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.after()"
+            }
+          },
+          {
+            "result": {
+              "duration": 427690,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 223302492,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the darksky Register page",
+            "match": {
+              "location": "MainPageSD.clickOnDarkSkyAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3374398105,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on login button",
+            "match": {
+              "location": "MainPageSD.clickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1162310917,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I verify error message \"password and username does not match\"",
+            "match": {
+              "location": "MainPageSD.clickOnLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@darkSky-1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 54345397,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Darksky Home Page",
+            "match": {
+              "location": "DarkSkyHomePageSD.verifyHomePageTitle()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1856033790,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.before()"
+            }
+          },
+          {
+            "result": {
+              "duration": 82482,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify individual day temp timeline",
+        "description": "",
+        "id": "darksky-feature;verify-individual-day-temp-timeline",
+        "after": [
+          {
+            "result": {
+              "duration": 118100642,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.after()"
+            }
+          },
+          {
+            "result": {
+              "duration": 126070,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27847130,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am on DarkSky Home Page",
+            "match": {
+              "location": "TimeZoneSD.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1114949219,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I expand todays timeline",
+            "match": {
+              "location": "DarkSkyHomePageSD.clickOnTodayButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 778133491,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I verify lowest and highest temp is displayed correctly",
+            "match": {
+              "location": "DarkSkyHomePageSD.listHighestAndLowestTemp()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@darkSky-2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33083848,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Darksky Home Page",
+            "match": {
+              "location": "DarkSkyHomePageSD.verifyHomePageTitle()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1799011734,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.before()"
+            }
+          },
+          {
+            "result": {
+              "duration": 76905,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify timeline is displayed in correct format",
+        "description": "",
+        "id": "darksky-feature;verify-timeline-is-displayed-in-correct-format",
+        "after": [
+          {
+            "result": {
+              "duration": 102287666,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.after()"
+            }
+          },
+          {
+            "result": {
+              "duration": 232304,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 88062783,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on Darksky Home Page",
+            "match": {
+              "location": "DarkSkyHomePageSD.verifyHomePageTitle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 273943658,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I enter city into search text field on home screen",
+            "match": {
+              "location": "TimeZoneSD.sendTextIntoSearcBox()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1030558162,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I verify city\u0027s time zone",
+            "match": {
+              "location": "TimeZoneSD.verifyTimeZone()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36432339,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I verify timeline is displayed with two hours incremented",
+            "match": {
+              "location": "TimeZoneSD.IsTimelineDisplayedWithTwoHoursIncremented()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@darkSky-3"
+          }
+        ]
+      }
+    ],
+    "name": "Darksky feature",
+    "description": "",
+    "id": "darksky-feature",
+    "keyword": "Feature",
+    "uri": "DarkSky.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@darkSky"
+      }
+    ]
+  }
+]

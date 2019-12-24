@@ -10,6 +10,7 @@ import org.testng.Assert;
 public class TimeZoneSD {
 
     private Timezone timeZone= new Timezone();
+
     @Given("^I am on DarkSky Home Page$")
     public void homePage(){
        Assert.assertEquals(SharedSD.getDriver().getCurrentUrl(), "https://darksky.net/forecast/40.7127,-74.0059/us12/en" );
@@ -24,10 +25,7 @@ public class TimeZoneSD {
     public void verifyTimeZone() throws InterruptedException {
 
         int expectedTime = timeZone.TimeZoneTwoHoursLater();
-        //System.out.println("According to GMT, expected time is " + expectedTime + " o'clock");
-
         int actualTime = timeZone.addTwoHoursOnCurrentTime();
-        //System.out.println("According to test case, actual time is "+ actualTime + " o'clock");
 
         Assert.assertEquals(actualTime, expectedTime );
 

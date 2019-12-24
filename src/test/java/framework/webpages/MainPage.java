@@ -16,7 +16,7 @@ public class MainPage extends ElementUtil{
     }
 
     public void clickOnloginBtn() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         clickOn(logInBtn);
     }
     public void enterEmailAddress(String text) throws InterruptedException {
@@ -27,8 +27,9 @@ public class MainPage extends ElementUtil{
         Thread.sleep(1000);
         setValue(passwordBox,text);
     }
-    public void clickOnlogin(){
+    public void clickOnlogin() throws InterruptedException {
         clickOn(login);
+        Thread.sleep(1000);
     }
     public String verifytheErrorMessage(){
     return getTextFromElement(errorMassage);

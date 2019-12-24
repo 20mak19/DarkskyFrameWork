@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1576968970568" stop="1576968972621" version="1.4.15" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Verify individual day temp timeline</name>
+    <title>Verify individual day temp timeline</title>
+    <test-cases>
+        <test-case start="1576968970570" stop="1576968970570" status="passed">
+            <name>Given I am on Darksky Home Page</name>
+            <title>Given I am on Darksky Home Page</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Nancys-Air.localdomain"/>
+                <label name="thread" value="39167@Nancys-Air.localdomain.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1576968970602" stop="1576968970602" status="passed">
+            <name>Given I am on DarkSky Home Page</name>
+            <title>Given I am on DarkSky Home Page</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Nancys-Air.localdomain"/>
+                <label name="thread" value="39167@Nancys-Air.localdomain.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1576968971720" stop="1576968971720" status="passed">
+            <name>When I expand todays timeline</name>
+            <title>When I expand todays timeline</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Nancys-Air.localdomain"/>
+                <label name="thread" value="39167@Nancys-Air.localdomain.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1576968972500" stop="1576968972501" status="passed">
+            <name>Then I verify lowest and highest temp is displayed correctly</name>
+            <title>Then I verify lowest and highest temp is displayed correctly</title>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="Nancys-Air.localdomain"/>
+                <label name="thread" value="39167@Nancys-Air.localdomain.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="story" value="Verify individual day temp timeline"/>
+        <label name="feature" value="Darksky feature"/>
+        <label name="framework" value="CucumberJVM"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
